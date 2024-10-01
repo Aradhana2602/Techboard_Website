@@ -1,5 +1,5 @@
 *{
-     background-color:  #D9D9D921; 
+     /* background-color:  #D9D9D921;  */
   
     
 }
@@ -14,7 +14,7 @@
 }
 
 .links{
-    background-color: #D9D9D921; 
+    /* background-color: #D9D9D921;  */
     display: flex;
     gap: 3rem;
     list-style-type: none;
