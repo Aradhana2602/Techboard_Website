@@ -1,0 +1,21 @@
+*{
+     background-color:  #D9D9D921; 
+  
+    
+}
+
+.navbar{
+    display: flex;
+    margin-left: 2rem;
+    padding: 1rem;
+    gap: 30rem;
+    font-style: none;
+    font-size: 20px;
+}
+
+.links{
+    background-color: #D9D9D921; 
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+}

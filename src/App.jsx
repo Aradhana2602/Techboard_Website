@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "./navbar/Navbar"; // Adjust path as per your directory structure
+import Home from './components/Home/Home.jsx'
+import About from './components/Home/About.jsx'
 
 function App() {
   return (
-    <div className="App">
-      <Navbar /> {/* Ensure the component name matches the import */}
-      {/* Other components or content can go here */}
+    <div >
+     <Home/>
+     <About/>
     </div>
   );
 }

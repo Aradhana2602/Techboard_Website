@@ -1,0 +1,50 @@
+/* Container for the content */
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    overflow: hidden;
+    
+    /* Adding grid lines as background */
+    background-image: 
+      linear-gradient(white 1px, transparent 1px),
+      linear-gradient(90deg, white 1px, transparent 1px);
+    background-size: 8rem 8rem; /* Adjust the size of the grid boxes */
+    filter: blur(2px);
+  }
+  
+  /* Glow effect with brighter and larger shadow */
+  .glow {
+    position: absolute;
+    box-shadow: 0 0 200px 80px rgba(255, 255, 255, 0.9); /* Brighter and larger shadow */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: top 0.2s ease-out, left 0.2s ease-out; /* Smoother movement */
+  }
+  
+  /* Content that stays static, positioned above the grid */
+  .content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    z-index: 10;
+    position: absolute; /* Use absolute positioning */
+    top: 20%; /* Position the content higher */
+    left: 50%;
+    transform: translateX(-50%); /* Center the content horizontally */
+    text-align: center;
+  }
+  
+  .content h1 {
+    font-size: 4rem;
+  }
+  
+  .content p {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  
